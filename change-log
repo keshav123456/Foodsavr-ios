@@ -1,0 +1,20 @@
+margin:auto; did not work
+border-color: did not work
+just list png file did not work
+just list merchant name did not work
+
+changes that work
+css file .half-image size matters for good landscape dissplay
+login.html - moved comments to bottom and hardcoded login credentials
+broadcast.html changed the button to small and added the inset and labels for input
+changes to enjustlist and justlist to show suppliername
+added ionic splash into ressources and ionic resources --splash
+logo in both the justlists
+UI for broadcast
+
+
+Pending
+change half-image in css to 0px
+add half-imageBr and set margin to 25px;
+change half-image to half-imageBr in broadcast.html
+

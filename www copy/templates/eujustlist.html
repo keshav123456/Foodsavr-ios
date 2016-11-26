@@ -1,0 +1,47 @@
+
+<body>
+<ion-view view-title="Justlist">
+
+<div class="bar bar-header bar-stable">
+     <button class="button button-icon icon" ng-click="gotoState(3)"> 
+     <i class="ion-chevron-left"></i> Back
+     </button>
+     <div class="h1 title">View Offers</div>
+</div>
+
+<div class="bar bar-stable bar-subheader item-input-inset">
+      <label class="item-input-wrapper" id="search-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" class="sfldS1" ng-model="searchtext" placeholder="Search">
+      </label>
+ 
+</div>
+
+<ion-content class="has-subheader has-header">
+    <ion-list  ng-repeat="item in items |filter:searchtext" ng-if="item.pic != null">
+    <a class="item item-thumbnail-left"  ng-click="showDetails(item)">
+        <!--img src="img/logo.jpg"-->
+        <img class="half-image" ng-src="data:image/jpeg;base64, {{item.pic}}">
+             <div style="margin-top:10px;">
+              <h2 style="font-weight:600;">{{item.prod}}</h2>
+              <p  style="font-weight:600; color:blue;">{{item.discount}} Discount on $10.00</p>
+              <h2>From {{item.suppliername}} @ &nbsp{{item.storeloc}} </h2>
+             </div>
+    </a> 
+    </ion-list>
+    
+    <!--- added for image popup -->
+    <script id="image-modal.html" type="text/ng-template">
+              <div class="modal image-modal transparent" ng-click="closeModal()">
+                  <ion-pane class="transparent">
+                     <img class="center-image" ng-src="data:image/jpeg;base64,{{pic}}"/>                     
+                  </ion-pane>
+              </div>
+    </script>
+    <!--- added for image popup -->
+
+</ion-content>
+
+
+</ion-view>
+</body>

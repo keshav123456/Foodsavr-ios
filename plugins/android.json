@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.fsapp407491"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+this version has working copy of eujustlist with thumbnail and modal detail display
+this also has the version with local storage working for username and suppliername WITHOUT LOCATION
+this also has the working version of broadcast
+all unwanted files have been removed from www folders
+single version is on there

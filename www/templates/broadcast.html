@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<ion-view view-title="Home">
+<ion-pane>
+<div>
+  <ion-tabs class="tabs-icon-bottom tabs-stable">
+        <ion-tab title="UploadOffers" icon="ion-home" href="#/app/broadcast">
+          <!--ion-nav-view name="menuContent"></ion-nav-view-->
+        </ion-tab>
+		
+		  <ion-tab title="SearchOffers" icon="ion-ios-information" href="#/app/justlist">
+          <!--ion-nav-view name="menuContent"></ion-nav-view-->
+        </ion-tab>
+  </ion-tabs>
+</div>
+ 
+ <div class="bar bar-header bar-stable">
+  <button class="button button-icon" ng-click="gotoState(3)"> Logout </button>
+  <div class="h1 title"> Upload offers</div>
+  </div>
+<!--<ion-header-bar align-title="centre" class="bar-balanced">
+  <button class="button button-icon" ng-click="gotoState(3)"> Logout </button>
+
+  <h1 class="title">Upload Offers</h1>  
+</ion-header-bar> -->
+
+<ion-content class="has-header">
+<div class="side1">
+<button  id="tpBtn" ng-click="takePicture()" class="icon ion-camera button button-block button-positive button-small">Take Picture</button>
+</div>
+  <!--button  class="icon ion-home" ng-click="sendPicture()"> Send Picture</button-->  
+  <!--br-->
+      <!--script>document.getElementById("tpBtn").addEventListener("click", function(){alert("Hello World");});</script-->
+    <!-- col-xx indicates how wide the picture will appear in the broadcast page ie no of col the pic is going to occupy in % of screen
+    <div class="col col-80">
+    <img ng-src="data:image/jpeg;base64, {{picture}}" width="100%"/>
+  -->
+
+<!-- use this when using imageDATA -->
+<div class="col col-50 margin-top:2px;"> 
+   <img class="half-imageBr" ng-src="data:image/jpeg;base64, {{picture}}"/>
+   <script type="text/javascript">$ionicScrollDelegate.resize();</script>
+   <br>
+</div> 
+
+<div class=divS1 ng-controller="cameraCtrl">
+  <label ng-model="suppliername"><h4> Shop @ {{suppliername}}</h4></label> 
+  <div class="list">
+      <label class="item-input-wrapper">Location:<label class="spaces20"></label>
+             <input type="text" placeholder="Eg: 10 joo chai lane" ng-model="storeloc" style="margin:2px;">
+      </label>
+
+      <label class="item-input-wrapper">Description:<label class="spaces5"></label>
+          <input type="text" placeholder="Eg: Croissants" ng-model="desc" style="margin:2px;">
+      </label>
+
+      <label class="item-input-wrapper">Price:<label class="spaces44"></label>
+                  <input type="text" placeholder="Eg: 20" ng-model="price"  size="5">
+              </label> 
+      
+      <label class="item-input-wrapper">Discount:<label class="spaces20"></label>
+          <input type="text" placeholder="Eg: 25%" ng-model="discount"  size="5"   style="margin:2px;">
+      </label> 
+
+
+  </div>
+  <button class="icon ion-home button button-block button-positive button-small" style="margin-left:5px;" ng-click="sendPicture()">Send Picture</button>
+</div>
+
+<!-- working
+<div class=divS1>
+  <label ng-model="suppliername"><h4> Shop @: {{suppliername}}</h4></label> 
+    <div  class=divS2 ng-if="true" ng-controller="cameraCtrl">    
+       <div class="list">
+         <input type="text" placeholder="Eg: 10 joo chai lane" ng-model="storeloc">
+         <input type="text" placeholder="Eg: Croissants" ng-model="desc">
+          <span>
+             <input type="text" placeholder="Eg: 50%" ng-model="discount">
+             <button class="icon ion-home button button-block button-positive button-small" ng-click="sendPicture()">Send Picture</button>
+          </span>
+          </div>
+       </div>
+   </div>
+</div>  
+-->
+
+</ion-content>  
+</ion-pane>
+</ion-view>
+</body>
+</htm l>
